@@ -1,0 +1,59 @@
+#div1, #div2, #div3 {
+    display:none
+}
+table {
+    background-color: transparent;
+    tr, td {
+        background-color: transparent;
+        vertical-align: middle;
+        padding: 10px;
+        .MuiSelect-outlined.MuiSelect-outlined {
+            height: 35px;
+            width: 120px;
+            padding: 0 16px 0 16px;
+        }
+    }
+}
+
+.piano {
+    td {
+        background: black;
+        padding: 0;
+        margin: 0;
+        font-size:0;
+    }
+}
+
+.selector {
+    height: 30px;
+    td {
+        padding-top: 7px;
+    }
+}
+
+select[name=root] {
+    width: 100%;
+}
+
+.texte-blanc {
+    padding: 5px;
+    background: #e0e0e0;
+}
+
+.piano-option {
+    height: 30px;
+    td {
+        vertical-align: middle;
+        padding-right: 5px;
+    }
+}
+
+.accord-gamme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div input {
+        margin-right: 5px;
+    }
+}

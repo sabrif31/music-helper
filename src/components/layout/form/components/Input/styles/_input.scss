@@ -1,0 +1,124 @@
+@import 'mixins';
+$primary-color: #465DE9;
+$secondary-color: #FF4576;
+$secondary-text-color: #6C6B71;
+.double-input {
+    @include flex(row, space-between, normal);
+    .airsaas-input { width: 45% }
+}
+
+.airsaas-input {
+    .MuiFormControl-marginNormal {
+        margin: 0;
+    }
+    //min-height: 90px;
+    width: 100%;
+    &.multiline {
+        height: 100%;
+        //margin-bottom: 20px;
+        .MuiInputBase-root {
+            height: 100%;
+            //padding: 15px !important;
+            //border: 1px solid transparent;
+            border-radius: 12px !important;
+        }
+        .MuiInputBase-inputMultiline {
+            height: 100%;
+        }
+        .MuiFormControl-root {
+            height: 100% !important;
+        }
+        .airsaas-input-wrapper {
+            height: 100%;
+        }
+    }
+    .airsaas-input-wrapper {
+        display: flex;
+        .start-adornment-wrapper {
+            @include size(46px, 46px);
+            @include absolute(16px, auto, auto, 0);
+            @include flex(row, center, center);
+            z-index: 150;
+            background: unset;
+            align-self: flex-end;
+            svg {
+                @include size(18px, 18px);
+                color: rgba(0, 0, 0, 0.54);
+                fill: rgba(0, 0, 0, 0.54);
+            }
+        }
+        .MuiFormControl-root {
+            width: 100%;
+            .MuiInputLabel-shrink {
+                transform: translate(0, -3px) scale(0.75);
+                transform-origin: top left;
+            }
+            .MuiFormLabel-root {
+                cursor: text;
+                z-index: 2;
+                margin-left: 20px;
+                margin-top: 6px;
+                &.MuiFormLabel-filled {
+                    color: rgba(0, 0, 0, 0.47);
+                    font-size: 20px;
+                    margin-left: 11px;
+                }
+                &.Mui-focused {
+                    color: var(--primary-color);
+                    font-size: 20px;
+                    margin-left: 11px;
+                }
+                &.Mui-error { color: $secondary-color }
+            }
+            .MuiInputBase-root {
+                //height: 46px;
+                //background-color: #F3F3F3;
+                //border-radius: 30px;
+                padding-left: 8px;
+                overflow: hidden;
+                &.Mui-error {
+                    //border: 1px solid $secondary-color;
+                }
+                &:after, &:before{
+                    //border-bottom: 0;
+                }
+            }
+        }
+    }
+    .MuiFormHelperText-root {
+        margin-top: 4px;
+        margin-left: 10px;
+    }
+    .MuiInput-underline:hover:not(.Mui-disabled):before {
+        border-bottom: 0 solid var(--primary-color);
+        &.Mui-error { border-bottom: 1px solid $secondary-color !important }
+    }
+    input {
+        padding: 12px 8px;
+        line-height: 22px;
+    }
+}
+
+.with-start-adornment .airsaas-input-wrapper {
+    .MuiFormControl-root label { transform: translate(27px, 24px) scale(1) }
+    input { padding-left: 37px !important }
+}
+
+
+// AutoComplete
+.airsaas-input {
+    .MuiAutocomplete-root {
+        width: 100% !important;
+        .MuiAutocomplete-endAdornment {
+            right: 9px !important;
+        }
+    }
+    .MuiAutocomplete-input{
+        padding: 6px !important;
+    }
+}
+
+.MuiAutocomplete-listbox {
+    padding: 0 !important;
+    height: auto !important;
+}

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\server",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\layout",
+    "\\src\\components\\layout\\Accordion",
+    "\\src\\components\\layout\\Container",
+    "\\src\\components\\layout\\Container\\Block",
+    "\\src\\components\\layout\\hue",
+    "\\src\\components\\layout\\Piano"
+  ],
+  "SelectedNode": "\\src\\components\\layout\\Container\\Block\\index.js",
+  "PreviewInSolutionExplorer": false
+}

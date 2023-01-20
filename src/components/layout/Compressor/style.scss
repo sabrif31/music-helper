@@ -1,0 +1,48 @@
+.compressor {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.draggable {
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+}
+.box {
+
+    height: 343px;
+    width: 343px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: dodgerblue;
+    /* margin: 200px; */
+    color: white;
+    /* padding: 10px; */
+    -ms-transform-origin: 50%; /* IE 9 */
+    -webkit-transform-origin: 50%; /* Chrome, Safari, Opera */
+    transform-origin: 50%;
+}
+
+.knob{
+    pointer-events: none;
+    position: relative;
+    top: -34px;
+    left: -34px;
+    //width: 410px;
+    //height: 410px;
+    //position: relative;
+    //-ms-transform-origin: 50%; /* IE 9 */
+    //-webkit-transform-origin: 50%; /* Chrome, Safari, Opera */
+    //transform-origin: 50%;
+    //cursor: pointer;
+    //&:before {
+    //    content: '';
+    //    position: absolute;
+    //    width: 410px;
+    //    height: 410px;
+    //    background: #000;
+    //    top: 0;
+    //    left: 0;
+    //}
+}

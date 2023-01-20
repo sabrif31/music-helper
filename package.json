@@ -1,0 +1,79 @@
+{
+  "name": "start-kit",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Florin Sabri",
+  "main": "public/electron.js",
+  "homepage": "./",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "classnames": "^2.2.6",
+    "electron-is-dev": "^1.2.0",
+    "gsap": "^3.6.0",
+    "list-files": "^1.1.4",
+    "lodash": "^4.17.19",
+    "node-sass": "^4.14.1",
+    "password-validator": "^5.0.3",
+    "pdf-viewer-reactjs": "^2.0.7",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-color": "^2.18.1",
+    "react-dom": "^16.13.1",
+    "react-gsap": "^2.2.1",
+    "react-i18next": "^11.7.0",
+    "react-scripts": "3.4.1",
+    "react-slideshow-image": "^3.5.0",
+    "react-virtualized": "^9.21.2",
+    "reactcss": "^1.2.3",
+    "socket.io-client": "^2.3.0",
+    "validator": "^13.1.1"
+  },
+  "build": {
+    "appId": "com.example.electron-cra",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "scripts": {
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts --openssl-legacy-provider build",
+    "react-test": "react-scripts test --env=jsdom",
+    "react-eject": "react-scripts eject",
+    "electron-build": "electron-builder",
+    "release": "yarn react-build && electron-builder --publish=always",
+    "build": "yarn react-build && yarn electron-build",
+    "start": "concurrently \"cross-env BROWSER=none yarn react-start\" \"wait-on http://localhost:3000 && electron .\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2",
+    "electron": "^9.1.0",
+    "electron-builder": "^22.7.0",
+    "electron-packager": "^15.0.0",
+    "wait-on": "^5.1.0"
+  }
+}

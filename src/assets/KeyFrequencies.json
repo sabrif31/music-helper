@@ -1,0 +1,128 @@
+[
+    {
+        "instrument": "Male vocal",
+        "high-pass": "100 Hz",
+        "fondamental": "200 Hz",
+        "sensible-frenquency": "2 kHz",
+        "harmonics": "4 - 5 kHz"
+    },
+    {
+        "instrument": "Female vocal",
+        "high-pass": "120 Hz",
+        "fondamental": "300 - 400 Hz",
+        "sensible-frenquency": "2,5 kHz",
+        "harmonics": "5 - 6 kHz"
+    },
+    {
+        "instrument": "Spoken voice",
+        "high-pass": "120 Hz",
+        "fondamental": "200 Hz",
+        "sensible-frenquency": "2 - 3 kHz",
+        "harmonics": "4 kHz"
+    },
+    {
+        "instrument": "Electric guitar",
+        "high-pass": "80 Hz",
+        "fondamental": "200 - 300 Hz",
+        "sensible-frenquency": "2,5 kHz",
+        "harmonics": "> 4 kHz"
+    },
+    {
+        "instrument": "Acoustic guitar",
+        "high-pass": "100 Hz",
+        "fondamental": "150 - 250 Hz",
+        "sensible-frenquency": "2 - 3,5 kHz",
+        "harmonics": "6 kHz"
+    },
+    {
+        "instrument": "Piano",
+        "high-pass": "-",
+        "fondamental": "80 à 150 Hz",
+        "sensible-frenquency": "2 - 3 kHz",
+        "harmonics": "> 4 kHz"
+    },
+    {
+        "instrument": "Harmonica",
+        "high-pass": "100 Hz",
+        "fondamental": "250 Hz",
+        "sensible-frenquency": "1,5 - 2,5 kHz",
+        "harmonics": "4 kHz"
+    },
+    {
+        "instrument": "Sax",
+        "high-pass": "80 Hz",
+        "fondamental": "150 - 250 Hz",
+        "sensible-frenquency": "2 kHz",
+        "harmonics": "3 - 4 kHz"
+    },
+    {
+        "instrument": "Trombon",
+        "high-pass": "80 Hz",
+        "fondamental": "150 Hz",
+        "sensible-frenquency": "1,5 kHz",
+        "harmonics": "3 kHz"
+    },
+    {
+        "instrument": "Trumpet",
+        "high-pass": "120 Hz",
+        "fondamental": "300 Hz",
+        "sensible-frenquency": "1,5 kHz",
+        "harmonics": "> 4 kHz"
+    },
+    {
+        "instrument": "Flute",
+        "high-pass": "200 Hz",
+        "fondamental": "300 Hz",
+        "sensible-frenquency": "1,5 - 2 kHz",
+        "harmonics": "4 kHz"
+    },
+    {
+        "instrument": "Bass",
+        "high-pass": "-",
+        "fondamental": "80 Hz",
+        "sensible-frenquency": "250 - 500 Hz",
+        "harmonics": "2 - 3 kHz"
+    },
+    {
+        "instrument": "Kick",
+        "high-pass": "-",
+        "fondamental": "60 - 80 Hz",
+        "sensible-frenquency": "350 - 600 Hz",
+        "harmonics": "2 - 3 kHz"
+    },
+    {
+        "instrument": "Kick",
+        "high-pass": "80 Hz",
+        "fondamental": "150 - 250 Hz",
+        "sensible-frenquency": "600 - 1,5 kHz",
+        "harmonics": "3 - 5 kHz"
+    },
+    {
+        "instrument": "Tom",
+        "high-pass": "100 Hz",
+        "fondamental": "150 - 200 Hz",
+        "sensible-frenquency": "600 Hz",
+        "harmonics": "2 - 3,5 kHz"
+    },
+    {
+        "instrument": "Tom-floor",
+        "high-pass": "-",
+        "fondamental": "120 Hz",
+        "sensible-frenquency": "300 - 500 Hz",
+        "harmonics": "2 - 3,5 kHz"
+    },
+    {
+        "instrument": "Charley/Cymbal",
+        "high-pass": "200 Hz",
+        "fondamental": "400 - 600 Hz",
+        "sensible-frenquency": "2 - 3 kHz",
+        "harmonics": "8 kHz"
+    },
+    {
+        "instrument": " ",
+        "high-pass": "",
+        "fondamental": "",
+        "sensible-frenquency": "",
+        "harmonics": ""
+    }
+]

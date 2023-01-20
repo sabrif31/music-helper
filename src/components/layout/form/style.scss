@@ -1,0 +1,22 @@
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+    align-items: center;
+}
+.flex-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(50%, 1fr));
+}
+.flex-grid-2-column {
+    display: flex;
+    flex-wrap: wrap;
+    > * {
+        margin-right: 10px;
+        flex: 1 1 auto;
+    }
+    .custom-textfield-wrapper {
+        width: 45%;
+    }
+}

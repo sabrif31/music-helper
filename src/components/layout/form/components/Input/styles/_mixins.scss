@@ -1,0 +1,54 @@
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin text($size, $weight, $letterSpacing) {
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $letterSpacing;
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin absolute($top, $right, $bottom, $left) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@function hexToRGB($hex) {
+    @return red($hex), green($hex), blue($hex);
+}
+
+@function rgbToHSL($r,$g,$b) {
+    //$r: red($hex);
+    //$g: green($hex);
+    //$b: blue($hex);
+    $max: max($r/255, $g/255, $b/255);
+    $min: min($r/255, $g/255, $b/255);
+    $delta: $max - $min;
+    @return $delta;
+}
+
+// darken ~ mix with black function
+@function mixDarken($hex, $opacity) {
+    @return unquote('linear-gradient(to top,rgba(0, 0, 0,'+ $opacity +'),rgba(0, 0, 0,' + $opacity + '))' + $hex);
+}
+
+// lighten ~ mix with white function
+@function mixLighten($hex, $opacity) {
+    @return unquote('linear-gradient(to top,rgba(255, 255, 255,'+ $opacity +'),rgba(255, 255, 255,' + $opacity + ')) ' + $hex);
+}
+
+// lighten ~ mix with white function
+@function mixOpacity($hex, $opacity) {
+    @return unquote('rgba(' + $hex + ', ' + $opacity + ')');
+}
